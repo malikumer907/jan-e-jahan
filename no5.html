@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask Her Out</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      color: #ff4d6d;
+      font-size: 2em;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .btn {
+      margin-top: 30px;
+      position: relative;
+    }
+
+    .btn a {
+      display: inline-block;
+      padding: 12px 30px;
+      margin: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .btn a:first-child {
+      background: #ff4d6d;
+    }
+
+    .btn a:first-child:hover {
+      background: #d43f5e;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn a:last-child {
+      background: #555;
+      position: absolute;
+    }
+
+    .tenor-gif-embed {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="tenor-gif-embed" data-postid="21889993" data-share-method="host" data-aspect-ratio="1.37853" data-width="100%">
+      <a href="https://tenor.com/view/sad-anime-gif-21889993">Sad Anime GIF</a> from 
+      <a href="https://tenor.com/search/sad-anime-gifs">Sad Anime GIFs</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+    <h1>U R PRECIOUS TO ME👀🥺🫀</h1>
+    <p>TUM MERE LIYE SAB SA IMPORTANT ho NOOR E JANNN🥺🥺 MUJA PATA MA  ACHA NI LAKIN TUM PHR BHI KHTI HO TUM BHOT ACHA HO😭😭 YRR TUM BHOT BHOT ACHI HOO TUMHARA JASA MUJA AJ TK NI MILA ITNE ACHA DIL LRKI HO TUM MA TO TUMHARA AGA KUCH BHI NHI 😭 TUM JAB SA AI HO ASA LAGTA ZINDAGI MA ROSHNI HO GAI HO🥺🫀 KABHI CHOR K NA JANA JAN E JAHAN 🥺🫀🥺🫀 BS YA HI ARZU MARI👀🥺🫀</p>
+
+    <div class="btn">
+      <a href="yes.html">Yes, I Love You ❤️</a>
+      <a href="#" id="no-btn">No, I Can't 😢</a>
+    </div>
+  </div>
+
+  <script>
+    // Make the "No" button move around within the container
+    document.getElementById("no-btn").addEventListener("mouseover", function () {
+      let container = document.querySelector(".container");
+      let maxX = container.clientWidth - this.clientWidth - 20;
+      let maxY = container.clientHeight - this.clientHeight - 20;
+      let x = Math.random() * maxX;
+      let y = Math.random() * maxY;
+      this.style.position = "absolute";
+      this.style.left = `${x}px`;
+      this.style.top = `${y}px`;
+    });
+  </script>
+</body>
+
+</html>
